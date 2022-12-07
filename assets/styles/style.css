@@ -1,0 +1,25 @@
+body{
+    font-family:'Noto Sans JP', sans-serif;
+
+}
+.p-header_inner{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+header{
+    display: flex;
+    padding: 15px 24px;
+}
+.p-header_nav_list{
+    display: flex;
+    gap: 32px;
+}
+.p-header_nav_icons{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+ul{
+    list-style: none;
+}
