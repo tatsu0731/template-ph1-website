@@ -23,3 +23,41 @@ header{
 ul{
     list-style: none;
 }
+/* ヘッダーここまで */
+/* ラインやるにょ */
+.p-line-body{
+    background: url(../img/bg-line.jpg);
+    position: relative;
+}
+.p-line-body::before{
+    background-color: rgba(0, 113, 188, 0.9);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.p-line-body-inner{
+    position: relative;
+}
+.p-body-inner-header{
+    color: white;
+}
+.p-body-inner-content{
+    color: white;
+}
+.p-line-button{
+    background-color: #fff;
+    border-radius: 50px;
+    color: #333;
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    line-height: 1.8;
+    max-width: 320px;
+    padding: 12px;
+    position: relative;
+    width: 100px;
+}
