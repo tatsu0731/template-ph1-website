@@ -46,7 +46,7 @@ ul{
 }
 .p-top-hero-body{
     border-radius: 24px;
-    padding: 50px 62px;
+    padding: 20px 62px;
     background-color: #eff2f5;
     display: inline-block;
     position: relative;
@@ -307,4 +307,40 @@ ul{
     font-size: 10px;
     letter-spacing: 0.1em;
     text-align: center;
+}
+/*クイズページここから*/
+/*全体適応*/
+main{
+    display: block;
+}
+/*メイン*/
+.l-main{
+    padding-top: 80px;
+}
+.p-quiz-hero{
+    background-image: url(../img/quiz/bg-hero.jpg);
+}
+/*↑検証ツールではさらにもう一枚画像あり。*/
+.p-hero{
+    padding: 110px 0 76px;
+}
+.l-container{
+    padding: 0 24px;
+    margin: 0 auto;
+    min-width: 1032px;
+    width: 100%;
+}
+.p-hero-title{
+    color: #fff;
+    font-weight: bold;
+}
+.p-hero-title-label{
+    font-size: 18px;
+    line-height: 1.8;
+}
+.p-hero-title-inline{
+    font-size: 60px;
+    margin-top: 12px;
+    display: block;
+    line-height: 1.5;
 }
