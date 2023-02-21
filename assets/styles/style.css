@@ -36,6 +36,17 @@ header{
 ul{
     list-style: none;
 }
+button{
+    appearance: none;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    text-transform: inherit;
+    vertical-align: middle;
+
+    cursor: pointer;
+}
 /* ヘッダーここまで */
 /*ここからメイン*/
 .p-top-hero-inner{
@@ -43,6 +54,7 @@ ul{
     margin: 0 auto;
     max-width: 1280px;
     position: relative;
+    align-items: center;
 }
 .p-top-hero-body{
     border-radius: 24px;
@@ -343,4 +355,93 @@ main{
     margin-top: 12px;
     display: block;
     line-height: 1.5;
+}
+/*ここからクイズページ*/
+.p-quiz-container{
+    margin-top: 120px;
+}
+.l-container{
+    padding: 0 24px;
+    margin: 0 auto;
+    min-width: 1032px;
+    width: 100%;
+}
+.p-quiz-box-label{
+    font-size: 36px;
+    background-color: #0071bc;
+    border-radius: 8px;
+    color: #fff;
+    display: inline-block;
+    font-family: "Plus Jakarta Sans", "Noto Sans JP", sans-serif;
+    font-weight: bold;
+    padding: 8px 16px;
+}
+.p-quiz-box-question-title{
+    font-size: 36px;
+    line-height: 1.5;
+    margin-top: 24px;
+}
+.p-quiz-box-question-image{
+    margin-top: 64px;
+    margin: 24px auto 0;
+    max-width: 718px;
+}
+.p-quiz-box-label{
+    font-size: 36px;
+}
+.p-quiz-box-label-accent{
+    background-color: #e34e70;
+}
+.p-quiz-box-answer-list{
+    gap: 24px;
+    grid-template-columns: repeat(3,1fr);
+    display: grid;
+    margin-top: 16px;
+}
+.p-quiz-box-answer-button{
+    border-width: 5px;
+    font-size: 18px;
+    padding: 19px;
+
+    align-items: center;
+    border: solid 4px #eee;
+    border-radius: 8px;
+    display: flex;
+    font-weight: bold;
+    line-height: 1.8;
+    text-align: left;
+    width: 100%;
+}
+.p-quiz-box-answer-button .u-icon-arrow{
+    font-size: 16px;
+    margin-left: auto;
+}
+.u-icon-arrow::after{
+    content: url(../img/quiz/play3.png);
+
+}
+.p-quiz-box-note{
+    font-size: 18px;
+    align-items: center;
+    background-color: #f6f6f6;
+    border-radius: 8px;
+    display: flex;
+    font-style: normal;
+    font-weight: bold;
+    gap: 16px;
+    line-height: 1.8;
+    margin-top: 16px;
+    padding: 24px;
+}
+.u-icon-note::before{
+    content: url(../img/quiz/graduation-cap.png);
+}
+.p-quiz-box:not(:first-of-type){
+    margin-top: 120px;
+}
+
+/*クイズページメインここまで*/
+.p-line{
+    margin-top: 144px;
+    margin-top: 64px;
 }
