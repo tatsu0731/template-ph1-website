@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="../assets/styles/reset.css">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../assets/styles/menu.css" >
 </head>
 <body>
-    <header>
+    <header id="js-header">
         <div class="p-header-logo">
             <img src="/assets/img/logo.svg">
         </div>
@@ -23,7 +24,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="/quiz/quiz.html">
                             クイズ
                         </a>
                     </li>
@@ -42,7 +43,20 @@
                 </li>
             </ul>
         </div>
+        <div class="openbtn" id="openbtn">
+            <span></span>
+            <span></span>
+        </div>
     </header>
+    <!--ここから見えないメニュー-->
+    <nav id="g-nav" class="">
+        <div id="g-nav-list">
+            <ul>
+                <li>POSSEとは</li>
+                <li>クイズ</li>
+            </ul>
+        </div>
+    </nav>
     <main>
         <section class="p-top-hero">
             <div class="p-top-hero-inner">
@@ -160,5 +174,8 @@
             <small lang="en">©2022 POSSE</small>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!--自作のJS-->
+    <script src="/quiz/menu.js"></script>
 </body>
 </html>

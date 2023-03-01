@@ -21,6 +21,7 @@ h2{
 }
 header{
     display: flex;
+    justify-content: space-between;
     padding: 15px 24px;
 }
 .p-header_nav_list{
@@ -439,7 +440,37 @@ main{
 .p-quiz-box:not(:first-of-type){
     margin-top: 120px;
 }
-
+.p-quiz-box-answer-correct .is-incorrect{
+    border-color: #eff2f5;
+    display: block;
+}
+.p-quiz-box-answer-correct{
+    border-radius: 8px;
+    margin-top: 16px;
+    padding: 24px 40px;
+}
+.is-incorrect .p-quiz-box-answer-correct-title{
+    color: #0071bc;
+}
+.p-quiz-box-answer-correct-title{
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+}
+.p-quiz-box-answer-correct-content{
+    align-items: baseline;
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    gap: 18px;
+    line-height: 1.8;
+    margin-top: 16px;
+}
+.p-quiz-box-answer-correct-content-label{
+    font-family: "Plus Jakarta Sans", "Noto Sans JP", sans-serif;
+    font-size: 24px;
+}
 /*クイズページメインここまで*/
 .p-line{
     margin-top: 144px;
