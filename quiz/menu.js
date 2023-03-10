@@ -8,3 +8,11 @@
     getNav.classList.toggle('panelactive');
   })
 }
+
+{
+  const btn = document.querySelectorAll('p-quiz-box-answer-button');
+
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('is-selected');
+  })
+}

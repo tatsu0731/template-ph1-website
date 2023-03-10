@@ -14,18 +14,20 @@
     <!--ここからヘッダー-->
     <header>
         <div class="p-header-logo">
-            <img src="/assets/img/logo.svg">
+            <a href="/top/index.html">
+                <img src="/assets/img/logo.svg">
+            </a>
         </div>
         <div class="p-header_inner">
             <nav class="p-header_nav">
                 <ul class="p-header_nav_list">
                     <li>
-                        <a href="./">
+                        <a href="/top/index.html">
                             POSSEとは
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="/quiz/quiz.html">
                             クイズ
                         </a>
                     </li>
@@ -44,8 +46,21 @@
                 </li>
             </ul>
         </div>
+        <div class="openbtn" id="openbtn">
+            <span></span>
+            <span></span>
+        </div>
     </header>
+    <!--ここから見えないメニュー-->
     <!--ここまでヘッダー-->
+    <nav id="g-nav" class="">
+        <div id="g-nav-list">
+            <ul>
+                <li>POSSEとは</li>
+                <li>クイズ</li>
+            </ul>
+        </div>
+    </nav>
     <!--ここからメインー-->
     <main class="l-main">
         <section class="p-hero p-quiz-hero">
@@ -136,5 +151,8 @@
         </div>
     </footer>
     <!--ここまでフッター-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!--自作のJS-->
+    <script src="/quiz/menu.js"></script>
 </body>
 </html>

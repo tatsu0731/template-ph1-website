@@ -73,38 +73,38 @@
      * @description 回答の生成
      * @type {string}
      */
-    const answersHtml = quizItem.answers.map((answer, answerIndex) => `<li class="p-quiz-box__answer__item">
-        <button class="p-quiz-box__answer__button js-answer" data-answer="${answerIndex}">
-          ${answer}<i class="u-icon__arrow"></i>
+    const answersHtml = quizItem.answers.map((answer, answerIndex) => `<li class="p-quiz-box-answer-item">
+        <button class="p-quiz-box-answer-button js-answer" data-answer="${answerIndex}">
+          ${answer}<i class="u-icon-arrow"></i>
         </button>
       </li>`
     ).join('');
 
     // 引用テキストの生成
-    const noteHtml = quizItem.note ? `<cite class="p-quiz-box__note">
-      <i class="u-icon__note"></i>${quizItem.note}
+    const noteHtml = quizItem.note ? `<cite class="p-quiz-box-note">
+      <i class="u-icon-note"></i>${quizItem.note}
     </cite>` : '';
 
     return `<section class="p-quiz-box js-quiz" data-quiz="${questionNumber}">
-      <div class="p-quiz-box__question">
-        <h2 class="p-quiz-box__question__title">
-          <span class="p-quiz-box__label">Q${questionNumber + 1}</span>
+      <div class="p-quiz-box-question">
+        <h2 class="p-quiz-box-question-title">
+          <span class="p-quiz-box-label">Q${questionNumber + 1}</span>
           <span
-            class="p-quiz-box__question__title__text">${quizItem.question}</span>
+            class="p-quiz-box-question-title-text">${quizItem.question}</span>
         </h2>
-        <figure class="p-quiz-box__question__image">
+        <figure class="p-quiz-box-question-image">
           <img src="../assets/img/quiz/img-quiz0${quizItem.id}.png" alt="">
         </figure>
       </div>
-      <div class="p-quiz-box__answer">
-        <span class="p-quiz-box__label p-quiz-box__label--accent">A</span>
-        <ul class="p-quiz-box__answer__list">
+      <div class="p-quiz-box-answer">
+        <span class="p-quiz-box-label p-quiz-box-label--accent">A</span>
+        <ul class="p-quiz-box-answer-list">
           ${answersHtml}
         </ul>
-        <div class="p-quiz-box__answer__correct js-answerBox">
-          <p class="p-quiz-box__answer__correct__title js-answerTitle"></p>
-          <p class="p-quiz-box__answer__correct__content">
-            <span class="p-quiz-box__answer__correct__content__label">A</span>
+        <div class="p-quiz-box-answer-correct js-answerBox">
+          <p class="p-quiz-box-answer-correct-title js-answerTitle"></p>
+          <p class="p-quiz-box-answer-correct-content">
+            <span class="p-quiz-box-answer-correct-content-label">A</span>
             <span class="js-answerText"></span>
           </p>
         </div>

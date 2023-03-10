@@ -1,3 +1,5 @@
+/*全体適応*/
+
 @media screen and (max-width:768px) {
 
 /*768px以下でのヘッダー表示取りやめ*/
@@ -64,6 +66,12 @@ footer .p-fixed-line-link{
  justify-content: center;
 }
 
+.p-quiz-box-answer-list{
+ display: flex;
+ flex-flow: column;
+  justify-content:space-between;
+}
+
 }
 
 #g-nav{
@@ -106,4 +114,10 @@ footer .p-fixed-line-link{
 
 #g-nav.panelactive ul{
  display: block;
+}
+
+/**/
+.is-selected{
+ background-color: #eff2f5;
+ border-color: #0071bc;
 }

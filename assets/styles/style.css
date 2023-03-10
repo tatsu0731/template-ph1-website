@@ -156,7 +156,7 @@ button{
 }
 .p-line-body{
     background: url(../img/bg-line.jpg);
-    border-radius: 56px;
+    border-radius: 28px;
     padding: 68px;
     position: relative;
 }
@@ -168,6 +168,7 @@ button{
     position: absolute;
     top: 0;
     width: 100%;
+    border-radius: 28px;
 }
 .p-line-body-inner{
     position: relative;
